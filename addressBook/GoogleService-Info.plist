@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>301719336957-m4e10gc1o9hmn658ja9441vdiochgr0s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.301719336957-m4e10gc1o9hmn658ja9441vdiochgr0s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCysSxDaTNuIOFlsBIo3v6cAabYH-lNd9E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>301719336957</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mehta</string>
+	<key>PROJECT_ID</key>
+	<string>addressbook-4102a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>addressbook-4102a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:301719336957:ios:7d3d7783d0316870adcb94</string>
+	<key>DATABASE_URL</key>
+	<string>https://addressbook-4102a.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,16 +8,16 @@
 
 import Foundation
 
-class Address {
-    var first: String
-    var last: String
-    var email: String
-    var phone: Double
-    
-    init(first: String, last: String, email: String, phone: Double) {
-        self.first = first
-        self.last = last
-        self.email = email
-        self.phone = phone
-    }
+class Book {
+var fname: String
+var lname: String
+var email: String
+var phone: Int
+
+init(fname: String, lname: String, email: String, phone: Int) {
+    self.fname = fname
+    self.lname = lname
+    self.email = email
+    self.phone = phone
+}
 }
