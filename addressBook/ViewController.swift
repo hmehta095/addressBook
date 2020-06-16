@@ -81,8 +81,8 @@ class ViewController: UIViewController {
             }
             
             override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                let bookTableViewController = segue.destination as! AddressBook
-                bookTableViewController.books = self.books
+                let AddressBook = segue.destination as! AddressBook
+                AddressBook.books = self.books
             }
             
             @objc func saveData() {
