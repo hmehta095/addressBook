@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MessageUI
+
 
 class AddressBook: UITableViewController, UISearchBarDelegate {
     @IBOutlet weak var searchview: UISearchBar!
@@ -18,7 +20,7 @@ class AddressBook: UITableViewController, UISearchBarDelegate {
     var name: [String] = ["him"]
        override func viewDidLoad() {
            super.viewDidLoad()
-        filterdata = name
+//        filterdata = booksname
         self.addDoneButtonOnKeyboard()
         
 
@@ -42,7 +44,36 @@ class AddressBook: UITableViewController, UISearchBarDelegate {
        }
     
    
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        print("button preseed3")
+        
+        self.sendEmail()
+         
+    }
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+         mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
+            mail.setToRecipients(["hmehta095@gmail.com"])
+         mail.setMessageBody("\(String(describing: books))", isHTML: true)
 
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+         let alert = UIAlertController(title: "Add Address Book", message: "Error in opening gmail.", preferredStyle: .alert)
+
+          alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+         
+
+          self.present(alert, animated: true)
+        }
+    }
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
        
        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let book = self.books![indexPath.row]
@@ -55,6 +86,10 @@ class AddressBook: UITableViewController, UISearchBarDelegate {
            // Configure the cell...
 
            return cell
+        
+        
+        
+       
        
        }
     

@@ -47,14 +47,14 @@ class ViewController: UIViewController {
                       
                       let book = Book(fname: fname, lname: lname, email: email, phone: phone)
               print("data saved")
-        let alert = UIAlertController(title: "Add Address Book", message: "Are you sure you want to save Contact?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Address Book", message: "Contact saved successfully", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+       
 
         self.present(alert, animated: true)
                       self.books?.append(book)
-              savedLabel.text = String(book.phone)
+             
     }
 
             func loadData() {

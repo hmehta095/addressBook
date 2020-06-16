@@ -71,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIy-SN-uem">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIy-SN-uem">
                                 <rect key="frame" x="96" y="487" width="223" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -79,7 +79,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlx-Jk-j3d">
-                                <rect key="frame" x="48" y="594" width="312" height="61"/>
+                                <rect key="frame" x="48" y="752" width="312" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="Check contactlist"/>
@@ -156,7 +156,13 @@
                             <outlet property="delegate" destination="NAT-r0-4AS" id="vZe-UW-w2U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jyP-ty-6gu"/>
+                    <navigationItem key="navigationItem" id="jyP-ty-6gu">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="nps-A3-1bt">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="NAT-r0-4AS" id="kUt-C8-16n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchview" destination="Lhz-2A-HFS" id="Y4M-8T-tfi"/>
                     </connections>
