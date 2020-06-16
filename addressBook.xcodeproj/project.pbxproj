@@ -16,6 +16,7 @@
 		BA8D44502498FB0C008DE6CD /* addressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D444F2498FB0C008DE6CD /* addressBookTests.swift */; };
 		BA8D445B2498FB0C008DE6CD /* addressBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D445A2498FB0C008DE6CD /* addressBookUITests.swift */; };
 		BA8D4469249906B8008DE6CD /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D4468249906B8008DE6CD /* AddressBook.swift */; };
+		BA8D446B24990B65008DE6CD /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8D446A24990B65008DE6CD /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BA8D445A2498FB0C008DE6CD /* addressBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressBookUITests.swift; sourceTree = "<group>"; };
 		BA8D445C2498FB0C008DE6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8D4468249906B8008DE6CD /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		BA8D446A24990B65008DE6CD /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BA8D443A2498FB01008DE6CD /* SceneDelegate.swift */,
 				BA8D443C2498FB01008DE6CD /* ViewController.swift */,
 				BA8D4468249906B8008DE6CD /* AddressBook.swift */,
+				BA8D446A24990B65008DE6CD /* Address.swift */,
 				BA8D443E2498FB01008DE6CD /* Main.storyboard */,
 				BA8D44412498FB0C008DE6CD /* Assets.xcassets */,
 				BA8D44432498FB0C008DE6CD /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				BA8D4469249906B8008DE6CD /* AddressBook.swift in Sources */,
 				BA8D44392498FB01008DE6CD /* AppDelegate.swift in Sources */,
 				BA8D443B2498FB01008DE6CD /* SceneDelegate.swift in Sources */,
+				BA8D446B24990B65008DE6CD /* Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
